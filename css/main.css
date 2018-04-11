@@ -1,0 +1,377 @@
+/* General Info 
+
+	Main Color: ;
+	Secondary Light Color: ;
+	Secondary Dark Color: ;
+	Type Scale: Major 2nd;
+
+*/
+
+/* Fonts */
+
+@font-face {
+	font-family: Roboto;
+	src: url("../font/roboto-light.ttf");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("../font/roboto-regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("../font/roboto-italic.ttf");
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("../font/roboto-bold.ttf");
+	font-weight: bold;
+}
+
+/* General Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #333;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: .889rem;
+	line-height: 1.6;
+	color: #fff;
+}
+
+header,
+main,
+footer {
+	padding: 2rem;
+}
+
+section, article, .container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+article {
+	max-width: 600px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+}
+
+h1 {
+	margin: 0 0 1.1rem;
+	font-size: 1.266rem;
+}
+
+h2 {
+	font-size: 1.266em;
+}
+
+h6 {
+	margin: 0 auto;
+	font-size: .624rem;
+}
+
+p,
+figcaption {
+	max-width: 600px;
+}
+
+a,
+figcaption a {
+	border-bottom: 1px solid;
+	color: #ccc;
+	text-decoration: none;
+	transition: color .1s,
+				opacity .1s;
+}
+
+a:hover {
+	color: #fff;
+}
+
+img	{
+	width: 100%;
+}
+
+article:last-child {
+	margin-bottom: 2rem;
+}
+
+figure {
+	margin: 0;
+	text-align: left;
+}
+
+figure img:last-of-type,
+figure a img {
+	margin-bottom: 1rem;
+}
+
+figure a:hover {
+	opacity: .6;
+}
+
+/* Elements */
+
+#to-top-button {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	padding: 1rem;
+	border-radius: 50%;
+	background: #eee;
+	box-shadow: 0 1px 2px #333;
+	color: #333;
+	text-decoration: none;
+}
+
+#to-top-button:hover {
+	color: #888;
+}
+
+.youtube-play-button {
+	display: none;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	margin: -9% 0 0 -9%;
+	width: 18%;
+	line-height: 0;
+}
+
+.group::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Header & Navigation */
+
+header {
+	
+	width: 100%;
+	background: #111;
+	text-transform: lowercase;
+}
+
+header a h1 {
+	color: #fff;
+	transition-duration: .1s;
+}
+
+header a h1:hover {
+	opacity: .7;
+}
+
+header a {
+	border-bottom: none;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	list-style-type: none;
+}
+
+nav ul li + li {
+	margin-left: 1rem;
+	padding-left: 1rem;
+	border-left: 1px solid #666;
+}
+
+/* Main Content */
+
+main {
+	min-height: calc(100vh - 79px);
+}
+
+section {
+	margin-bottom: 2.5rem;
+}
+
+main#portfolio a {
+	float: left;
+	width: 50%;
+	border-bottom: 0;
+	line-height: 0;
+}
+
+main#portfolio a:hover {
+	opacity: .6;
+}
+
+main#portfolio a:active {
+	opacity: .4;
+}
+
+section ul {
+	margin: 0;
+	padding: 0;
+}
+
+section ul li {
+	list-style-type: none;
+}
+
+article {
+	margin-bottom: 3.5rem;
+}
+
+/* * About Page */
+
+main#about {
+	text-align: left;
+}
+
+/* * Works Page */
+
+main#works {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+main#works h2 {
+	text-align: left;
+}
+
+main#works article {
+	padding-top: 2rem;
+}
+
+main#works figure {
+	position: relative;
+}
+
+main#works figure a {
+	border-bottom: 0;
+}
+
+/* Footer */
+
+footer {
+	height: 79px;
+	background: #111;
+}
+
+/* Media Queries */
+
+@media (min-width: 425px) {
+
+	footer h6 {
+		font-size: .889rem;
+		font-weight: normal;
+	}
+
+	p,
+	main#works figcaption {
+		max-width: 460px;
+	}
+
+}
+
+@media (min-width: 640px) {
+
+	main#portfolio a {
+		width: 25%;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	body {
+		font-size: 1.125rem;
+		font-weight: 300;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	h6 {
+		line-height: 1.1;
+		font-size: .889rem;
+		font-weight: normal;
+	}
+
+	main {
+		margin-top: 6rem;
+	}
+
+	header {
+		position: fixed;
+		top: 0;
+		z-index: 1000;
+		margin-bottom: 1.5rem;
+	}
+
+	footer {
+		text-align: left;
+	}
+
+	p {
+		max-width: 600px;
+	}
+
+	header h1 {
+		float: left;
+		margin-bottom: 0;
+	}
+
+	header nav {
+		float: right;
+		position: relative;
+		top: 3px;
+	}
+
+	header nav a {
+		font-weight: normal;
+	}
+
+	main#portfolio a {
+		width: 25%;
+	}
+
+	main#works article {
+		padding-top: 8rem;
+	}
+
+	main#works figcaption {
+		max-width: inherit;
+	}
+
+}
+
+@media (min-width: 2560px) {
+
+	html {
+		font-size: 20px;
+	}
+
+	section, article, .container {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
+}
