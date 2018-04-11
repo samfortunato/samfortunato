@@ -1,0 +1,11 @@
+# Directories
+_old/
+Portfolio/
+
+# File Types
+*.png
+*.jpg
+*.svg
+
+# Files
+robots.txt
