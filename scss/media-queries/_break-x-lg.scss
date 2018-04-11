@@ -1,0 +1,12 @@
+@media #{$break-x-lg} {
+
+	html {
+		font-size: 20px;
+	}
+
+	section, article, .container {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
+}

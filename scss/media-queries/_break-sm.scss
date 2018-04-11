@@ -1,0 +1,13 @@
+@media #{$break-sm} {
+
+	footer h6 {
+		font-size: .889rem;
+		font-weight: normal;
+	}
+
+	p,
+	main#works figcaption {
+		max-width: 460px;
+	}
+
+}

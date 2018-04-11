@@ -1,6 +1,7 @@
 # Directories
 _old/
 Portfolio/
+.sass-cache/
 
 # File Types
 *.png
