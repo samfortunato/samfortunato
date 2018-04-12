@@ -1,11 +1,11 @@
 header {
 	width: 100%;
-	background: #111;
+	background: $color-dark;
 	text-transform: lowercase;
 }
 
 header a h1 {
-	color: #fff;
+	color: $white;
 	transition-duration: .1s;
 }
 
@@ -16,6 +16,8 @@ header a h1:hover {
 header a {
 	border-bottom: none;
 }
+
+// Main Navigation
 
 nav ul {
 	margin: 0;
@@ -30,5 +32,5 @@ nav ul li {
 nav ul li + li {
 	margin-left: 1rem;
 	padding-left: 1rem;
-	border-left: 1px solid #666;
+	border-left: 1px solid lighten($color-dark, 30%);
 }
