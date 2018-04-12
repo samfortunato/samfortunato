@@ -24,8 +24,10 @@
 	line-height: 0;
 }
 
-%group::after {
-	content: "";
-	display: table;
-	clear: both;
+%group {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
