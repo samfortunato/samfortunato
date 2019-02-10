@@ -9,4 +9,5 @@ Portfolio/
 *.svg
 
 # Files
+.DS_Store
 robots.txt
