@@ -10,7 +10,6 @@ main#portfolio a {
 	float: left;
 	width: 50%;
 	border-bottom: 0;
-	line-height: 0;
 }
 
 main#portfolio a:hover {
@@ -34,8 +33,23 @@ article {
 	margin-bottom: 3.5rem;
 }
 
-#graphic-design,
-#video,
-#web {
+#works,
+#skills,
+#about-contact {
 	@extend %group;
+}
+
+#works a {
+	line-height: 0;
+}
+
+#skills,
+#about-contact {
+	& li {
+		list-style: disc inside !important;
+	}
+	
+	& a {
+		float: none !important;
+	}
 }
