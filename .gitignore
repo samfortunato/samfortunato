@@ -2,6 +2,7 @@
 _old/
 Portfolio/
 .sass-cache/
+css/
 
 # File Types
 *.png
