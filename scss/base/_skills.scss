@@ -29,7 +29,7 @@
     
     @for $i from 1 to 11 {
       &:nth-child(#{$i}) {
-        $color-val: (262 - ($i * 7));
+        $color-val: (263 - ($i * 8));
 
         background-color: rgb($color-val, $color-val, $color-val);
       }
