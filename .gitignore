@@ -6,6 +6,7 @@ css/
 *.png
 *.jpg
 *.svg
+*.gif
 
 # Files
 .DS_Store
