@@ -1,0 +1,44 @@
+@media (min-width: 568px) {
+  #about {
+    display: flex;
+
+    article {
+      margin-right: 2rem;
+      font-size: .9rem;
+    }
+    
+    img {
+      width: 38.2%;
+      height: 38.2%;
+      margin-bottom: 0;
+      
+      order: 2;
+    }
+  }
+  
+  #works-list {
+    li {
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+    }
+
+    article {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      
+      section {
+        padding: 0;
+
+        h3 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  
+  footer {
+    small {
+      font-size: .8rem;
+    }
+  }
+}
