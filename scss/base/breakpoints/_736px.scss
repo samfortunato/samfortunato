@@ -1,0 +1,28 @@
+@media (min-width: 736px) {
+  #about {
+    article {
+      font-size: 1rem;
+    }
+  }
+
+  #contact-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+    li {
+      width: 21.5%;
+      text-align: center;
+      background-color: rgb(245, 245, 245);
+
+      a {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1rem;
+
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,6 +1,4 @@
 # Directories
-_old/
-Portfolio/
 .sass-cache/
 css/
 
@@ -8,6 +6,7 @@ css/
 *.png
 *.jpg
 *.svg
+*.gif
 
 # Files
 .DS_Store

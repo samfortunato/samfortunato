@@ -1,5 +1,10 @@
-// ===========
-// Base Styles
-// ===========
-
+@import 'normalize';
 @import 'base';
+@import 'header';
+@import 'about';
+@import 'skills';
+@import 'works';
+@import 'contact';
+@import 'footer';
+
+@import 'breakpoints';

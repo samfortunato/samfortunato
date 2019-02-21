@@ -1,0 +1,10 @@
+#contact-list {
+  list-style: square;
+  list-style-position: inside;
+  font-size: 1.2rem;
+
+  a {
+    display: inline-block;
+    padding: .5rem 0;
+  }
+}
