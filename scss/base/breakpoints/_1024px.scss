@@ -1,12 +1,62 @@
 @media (min-width: 1024px) {
+  body {
+    padding: 2rem;
+  }
+  
+  header, main, footer {
+    max-width: 1024px;
+  }
+
+  header {
+    margin: 0 auto;
+  }
+
+  main, footer {
+    margin: 0 auto;
+  }
+
+  section, #works h2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  footer {
+    margin-top: 3rem;
+    padding: 0;
+  }
+  
+  #about {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  #skills-list {
+    li {
+      width: 20%;
+    }
+  }
+  
   #works-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
 
-    article {
-      grid-template-rows: 1fr 2fr;
-      grid-template-columns: none;
-      grid-auto-flow: row dense;
+    li {
+      padding: 0;
+
+      article {
+        grid-template-columns: none;
+
+        figure {
+          margin-bottom: 1.5rem;
+        }
+
+        h3,
+        .project-description {
+          padding: 0;
+        }
+      }
     }
   }
 }
