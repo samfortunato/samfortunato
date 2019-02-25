@@ -11,10 +11,12 @@
     justify-content: space-between;
 
     li {
-      width: 21.5%;
+      min-width: 16%;
+
+      font-size: .85rem;
       text-align: center;
       background-color: rgb(245, 245, 245);
-
+      
       a {
         display: inline-block;
         box-sizing: border-box;
