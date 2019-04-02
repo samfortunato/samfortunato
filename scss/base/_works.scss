@@ -27,7 +27,33 @@
 
   h3 {
     padding: 0 2rem;
-    margin: 2rem 0 1.5rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .project-links {
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+    
+    li {
+      display: inline-block;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+
+        font-size: 0.85rem;
+        background-color: rgb(230, 230, 230);
+        text-decoration: none;
+
+        &:active {
+          background-color: rgb(209, 209, 209);
+        }
+      }
+    }
   }
 
   .project-description {
