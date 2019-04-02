@@ -78,6 +78,23 @@
           }
         }
 
+        .project-links {
+          padding: 0;
+
+          a {
+            outline: none;
+            transition: .1s background-color;
+            
+            &:hover, &:focus {
+              background-color: rgb(215, 215, 215);
+            }
+        
+            &:active {
+              background-color: rgb(200, 200, 200);
+            }
+          }
+        }
+
         h3,
         .project-description {
           padding: 0;
@@ -95,11 +112,11 @@
         transition: .1s background-color;
         
         &:hover, &:focus {
-          background-color: rgb(223, 223, 223);
+          background-color: rgb(215, 215, 215);
         }
     
         &:active {
-          background-color: rgb(209, 209, 209);
+          background-color: rgb(200, 200, 200);
         }
       }
     }
