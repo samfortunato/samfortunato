@@ -1,5 +1,5 @@
 sup
 
-i do javascript, html, css.
+interactive experiences — web pages, games
 
-interactive experiences — web pages, and games.
+javascript, html, css
