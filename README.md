@@ -12,5 +12,3 @@ in order of most to least:
 - css
 - ruby
 - php
-
-idk
